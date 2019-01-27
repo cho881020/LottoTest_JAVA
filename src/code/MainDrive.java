@@ -91,9 +91,9 @@ public class MainDrive {
 		
 		
 //		당첨번호가 어떤것들인지 화면에 출력
-		for(int i=0; i<lottoAnswerArr.length; i++) {
+/*		for(int i=0; i<lottoAnswerArr.length; i++) {
 			System.out.println(lottoAnswerArr[i]);
-		}
+		}*/
 		
 //		기능3. 당첨번호 작은수 부터 정리
 		int[] sortedLottoAnswerArr = new int[6];
@@ -122,6 +122,11 @@ public class MainDrive {
 			sortedLottoAnswerArr[i] = min;
 //			찾아낸 최소값 자리는 강제로 매우큰 수로 교체;
 			lottoAnswerArr[minIdx] = 9999999;
+		}
+		
+//		금주의 당첨번호를 출력
+		for(int i=0; i<sortedLottoAnswerArr.length; i++) {
+			System.out.print(sortedLottoAnswerArr[i] + " ");
 		}
 		
 		sc.close();
