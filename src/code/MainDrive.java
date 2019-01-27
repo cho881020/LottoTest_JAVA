@@ -84,9 +84,9 @@ public class MainDrive {
 		}
 //		당첨번호가 뭔지 화면에 출력
 		
-		for(int i=0; i<lottoAnswerArr.length;i++) {
-			System.out.println(lottoAnswerArr[i]);
-		}
+//		for(int i=0; i<lottoAnswerArr.length;i++) {
+//			System.out.println(lottoAnswerArr[i]);
+//		}
 		
 //		기능 3. 당첨번호 오름차순으로 정리
 		
@@ -118,6 +118,11 @@ public class MainDrive {
 			lottoAnswerArr[minIndex] = 9999999;
 		}
 		
+//		금주의 당첨 번호 출력
+		
+		for(int i=0; i<sortedLottoAnswerArr.length;i++) {
+			System.out.println(sortedLottoAnswerArr[i]);
+		}
 		
 	}
 }
