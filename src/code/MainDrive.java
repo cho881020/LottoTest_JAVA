@@ -160,6 +160,6 @@ public class MainDrive {
 			System.out.println(sortedLottoAnswerArr[i]);
 		}
 		
-		
+//		TODO - 입력한 값과 당첨번호를 대조해서 몇등인지 판단 후 출력하는 기능 제작
 	}
 }
