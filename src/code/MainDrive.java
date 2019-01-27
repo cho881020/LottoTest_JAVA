@@ -30,9 +30,9 @@ public class MainDrive {
 					if(userArr[j]==inputNum) {
 //						중복검사를 통과하지 못한다.
 						duplOk=false;
-//						하나라도 걸렸으면 더 볼 필요도 없다
+//						하나라도 걸렸으면 더 볼 필요도 없다.
 						break;
-					}
+					} 
 				}
 				
 //				범위와, 중복검사를 모두 (and) 통과한다면
