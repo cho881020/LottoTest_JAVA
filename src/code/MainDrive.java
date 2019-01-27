@@ -157,6 +157,10 @@ public class MainDrive {
 			System.out.print(sortedLottoAnswerArr[i] + " ");
 		}
 
+		
+//		TODO - 입력한 값과 당첨번호를 대조해서 몇등인지 판단, 출력. 
+		
+		
 //	4) 정렬된 두개의 배열을 가지고 비교해서 등수를 출력.
 //	  - 6개의 숫자가 모두 같다! 1등.
 //	  - 5개의 숫자가 같다! 3등
