@@ -119,6 +119,8 @@ public class MainDrive {
 		
 //		기능 3. 당첨번호 작은수 부터 정리 (오름차순 정렬)
 		
+//		정렬 되어 저장될 당첨번호 배열.
+		int[] sortedLottoAnswerArr = new int[6];
 		
 		
 		
