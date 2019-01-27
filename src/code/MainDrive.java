@@ -91,18 +91,19 @@ public class MainDrive {
 				
 //				중복여부가 괜찮다면
 				if(duplOk) {
-//					lottoAnswerArr[i] = randomNum;
+//					랜덤으로 생성한 번호를 당첨번호로 등록
+					lottoAnswerArr[i] = randomNum;
+//				다음 숫자를 뽑으러 이동
 					break;
 				}
 			
-				
-				
+							
 			}
 		}
 		
 		
 		
-		
+//		당첨번호가 어떤 것들인지 화면에 출력
 		for (int i = 0; i < userInputArray.length; i++) {
 			System.out.println(userInputArray[i]);
 		}
