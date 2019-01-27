@@ -89,10 +89,10 @@ public class MainDrive {
 			}
 		}
 //		당첨번호가 어떤 것들인지 화면에 출력
-		for (int i = 0; i < lottoAnswerArr.length; i++) {
+	/*	for (int i = 0; i < lottoAnswerArr.length; i++) {
 			
 			System.out.println(lottoAnswerArr[i]);
-		}
+		} */
 		
 //		기능4. 당첨번호 작은 수 부터 정리(오름차순 정렬)
 //		정렬되어 저장될 당첨번호 배열.
@@ -122,6 +122,11 @@ public class MainDrive {
 //			찾아낸 값은 더이상 정렬할 필요가 없으니 강제로 매우 큰 값으로 변경.
 			lottoAnswerArr[minIndex] = 999999;
 			
+		}
+		
+//		금주의 당첨번호를 출력
+		for (int i = 0; i < sortedLottoAnswerArr.length; i++) {
+			System.out.println(sortedLottoAnswerArr[i]);
 		}
 		
 	}
