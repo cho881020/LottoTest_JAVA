@@ -109,5 +109,35 @@ public class MainDrive {
 //		정렬되어 저장될 당첨번호 배열
 		int[] sortedLottoAnswerArr = new int[6];
 		
+//		정렬될 배열을 담당하는 for문
+		for (int i=0 ; i < sortedLottoAnswerArr.length ; i++) {
+			
+//			내가 찾아낸 최소값의 저장하는 변수
+			int min = 9999999;
+//			찾아낸 최소값이 어느 위치에 있었는지 저장
+			int minIndex = 0;
+			
+//			당첨번호중에 제일 작은 값을 찾아내내는 for문
+			for (int j=0 ; j < lottoAnswerArr.length ; j++) {
+				
+//				새로운 최소값을 찾았다면,
+				if (min > lottoAnswerArr[j]) {
+					
+//					최소값을 지금 찾아낸 값으로 변경.
+					min = lottoAnswerArr[j];
+					
+//					찾아낸 위치가 어딘지도 변경
+					minIndex=j;
+					
+				}
+			}
+			
+//			정렬될 배열에 찾아낸 최소값을 기록
+			sortedLottoAnswerArr[i] = min;
+//			찾아낸 값은 더이상 정렬할 필요가 없으니, 강제로 매우 큰 값으로 변경.
+			lottoAnswerArr[minIndex] = 9999999;
+		}
+		
+		
 	}
 }
