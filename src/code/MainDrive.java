@@ -15,12 +15,41 @@ public class MainDrive {
 		
 		for(int i=0; i<userInput.length; i++) {
 			
-			System.out.print(String.format("%d번째 번호를 입력하세요 : ", i+1));
-			
-			userInput[i] = sc.nextInt();
-			System.out.println(userInput[i]);
+			while(true) {
+				
+				System.out.print(String.format("%d번째 번호를 입력하세요 : ", i+1));
+				
+//				입력값을 바로 넣지 않고 임시변수에 저장.
+				int inputNum = sc.nextInt();
+				
+//				입력값이 1~45여야 true로 저장
+				boolean rangeOk = 1 <= inputNum && inputNum < 45;
+//				기본전재를 true
+				boolean duplOk = true;
+				
+//				저장된 배열을 다시 돌아봄.
+				for(int j=0; j<userInput.length; j++) {
+//					하나라도 입력값이 지금과 같다면
+					if(userInput[j] == inputNum) {
+//						중복검사는 통과하지못함.
+						duplOk = false;
+//						더 볼것 없음
+						break;
+					}
+				}
+//				범위와 중복검사를 모두 (and) 통과한다면
+				if(rangeOk && duplOk) {
+					userInput[i] = inputNum;
+					System.out.println("다음숫자를 입력하세요");
+//					다음숫자를 입력하기 위해 while문 탈출
+					break;
+				}
+			}
+
 		}
 
+//		기능2. 6개의 숫자를 입력받을때, 1~45인지, 중복을 검사해서 중복이 아닐경우에 배열에 값을 넣기.
+		
 		sc.close();
 	}
 }
