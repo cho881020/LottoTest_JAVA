@@ -111,6 +111,14 @@ public class MainDrive {
 		}
 		
 		
+//		당첨번호가 어떤것들인지 화면에 출력
+		for (int i=0 ; i < lottoAnswerArr.length ; i++) {
+			System.out.println(lottoAnswerArr[i]);
+		}
+		
+		
+		
+		
 		
 		
 	}
