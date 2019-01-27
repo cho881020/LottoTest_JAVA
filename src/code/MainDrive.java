@@ -93,5 +93,7 @@ public class MainDrive {
 			
 			System.out.println(lottoAnswerArr[i]);
 		}
+		
+//		기능4. 당첨번호 작은 수 부터 정리(오름차순 정렬)
 	}
 }
