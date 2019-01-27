@@ -65,6 +65,53 @@ public class MainDrive {
 //		기능 2. 6개의 숫자를 입력 받을때, 1~45인지, 중복을 검사해서 OK일때만 배열에 저장.
 		
 		
+//		기능 3. 컴퓨터가 6개의 숫자를 저장. 1~45인지, 중복이 아닌지 검사해서 저장.
+		
+//		당첨번호 6개를 저장할 배열을 생성.
+		int[] lottoAnswerArr = new int[6];
+		
+//		6개의 당첨번호를 만들기 위한 반복문.
+		for (int i=0 ; i < lottoAnswerArr.length ; i++) {
+			
+//			조건을 만족시킬때까지 다시 만들도록 무한반복.
+			while (true) {
+				
+				double randomVal = Math.random();
+				
+//				1 <= randomVal * 45 + 1 < 46 : 1 ~ 45의 값중 랜덤.
+				
+				int randomNum = (int) (randomVal * 45 + 1);
+				
+//				랜덤으로 나온값이 1 ~ 45 인지? 검사를 안해도 되겠다!
+//				boolean rangeOk 
+				
+//				이미 만들어져있는지? 검사 해야함.
+				boolean duplOk = true;
+				
+				for (int j = 0 ; j < lottoAnswerArr.length ; j++) {
+					if (lottoAnswerArr[j] == randomNum) {
+//						이번에 뽑은 번호가 중복이다~!
+						duplOk = false;
+						break;
+					}
+				}
+				
+//				중복여부가 괜찮다면
+				if (duplOk) {
+//					랜덤으로 생성한 번호를 당첨번호로 등록.
+					lottoAnswerArr[i] = randomNum;
+//					다음 숫자를 뽑으러 이동.
+					break;
+				}
+				
+				
+				
+			}
+			
+		}
+		
+		
+		
 		
 	}
 }
