@@ -117,6 +117,8 @@ public class MainDrive {
 		}
 		
 		
+//		기능 3. 당첨번호 작은수 부터 정리 (오름차순 정렬)
+		
 		
 		
 		
