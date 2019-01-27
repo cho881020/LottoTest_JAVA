@@ -88,5 +88,13 @@ public class MainDrive {
 			System.out.println(lottoAnswerArr[i]);
 		}
 		
+//		기능 3. 당첨번호 오름차순으로 정리
+		
+//		정렬된 번호 저장할 배열
+		int[] sortedLottoAnswerArr = new int[6];
+		
+		
+		
+		
 	}
 }
