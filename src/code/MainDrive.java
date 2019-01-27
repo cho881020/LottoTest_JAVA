@@ -71,7 +71,7 @@ public class MainDrive {
 //				이미 만들어져있는지? 검사해야함. = 중복인지
 				boolean duplOk = true;
 				for (int j = 0; j < lottoAnswerArr.length; j++) {
-					if(lottoAnswerArr[i] == randomNum) {
+					if(lottoAnswerArr[j] == randomNum) {
 //						이번에 뽑은 번호가 중복이다.
 						duplOk = false;
 						break;
@@ -92,7 +92,7 @@ public class MainDrive {
 	/*	for (int i = 0; i < lottoAnswerArr.length; i++) {
 			
 			System.out.println(lottoAnswerArr[i]);
-		} */
+		}*/ 
 		
 //		기능4. 당첨번호 작은 수 부터 정리(오름차순 정렬)
 //		정렬되어 저장될 당첨번호 배열.
