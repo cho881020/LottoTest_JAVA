@@ -99,11 +99,11 @@ public class MainDrive {
 			}
 		}
 		
-//		당첨번호가 어떤 것들인지 화면에 출력
-		for (int i=0 ; i < lottoAnswerArr.length ; i++) {
-			System.out.println(lottoAnswerArr[i]);
-			
-		}
+////		당첨번호가 어떤 것들인지 화면에 출력
+//		for (int i=0 ; i < lottoAnswerArr.length ; i++) {
+//			System.out.println(lottoAnswerArr[i]);
+//			
+//		}
 		
 //		기능4. 당첨번호 작은 수부터 정리 (오름차순 정렬)
 //		정렬되어 저장될 당첨번호 배열
@@ -138,6 +138,12 @@ public class MainDrive {
 			lottoAnswerArr[minIndex] = 9999999;
 		}
 		
+//		금주의 당첨번호 출력
+		for (int i=0 ; i < sortedLottoAnswerArr.length ; i++) {
+			System.out.println(sortedLottoAnswerArr[i]);
+		}
+		
+//		TODO - 입력한 값과 당첨 번호를 대조해서 몇 등인지 판단, 출력. (window - show view - tasks)
 		
 	}
 }
