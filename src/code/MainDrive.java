@@ -89,7 +89,7 @@ public class MainDrive {
 //				이미 만들어져있는지? 검사해야함.
 				boolean duplOk = true ;
 				
-				for (j=0 ; j < lottoAnswerArr.length ; j++) {
+				for (int j=0 ; j < lottoAnswerArr.length ; j++) {
 					
 					if (lottoAnswerArr[j] == randomNum) {
 						duplOk = false ;
@@ -108,6 +108,13 @@ public class MainDrive {
 			}  // while 종료 => 숫자 생성 반복
 			
 		} // for 끝 
+		
+		
+//		당첨번호가 어떤것들인지 화면에 출력
+		for(int i = 0 ; i < lottoAnswerArr.length ; i++) {
+			
+			System.out.println(lottoAnswerArr[i]);
+		}
 		
 		
 		
