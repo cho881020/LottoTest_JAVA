@@ -110,11 +110,11 @@ public class MainDrive {
 		} // for 끝 
 		
 		
-//		당첨번호가 어떤것들인지 화면에 출력
-		for(int i = 0 ; i < lottoAnswerArr.length ; i++) {
-			
-			System.out.println(lottoAnswerArr[i]);
-		}
+////		당첨번호가 어떤것들인지 화면에 출력
+//		for(int i = 0 ; i < lottoAnswerArr.length ; i++) {
+//			
+//			System.out.println(lottoAnswerArr[i]);
+//		}
 		
 		
 //	 3) 당첨번호 작은 숫자부터 큰 숫자 순으로 정렬. (오름차순 정렬)
@@ -151,6 +151,11 @@ public class MainDrive {
 			lottoAnswerArr[minIndex] = 9999999;
 		} // i for
 		
+		
+//		금주의 당첨번호 출력
+		for(int i = 0 ; i < sortedLottoAnswerArr.length ; i++) {
+			System.out.print(sortedLottoAnswerArr[i] + " ");
+		}
 
 //	4) 정렬된 두개의 배열을 가지고 비교해서 등수를 출력.
 //	  - 6개의 숫자가 모두 같다! 1등.
