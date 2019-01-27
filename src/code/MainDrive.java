@@ -89,6 +89,15 @@ public class MainDrive {
 			}
 		}
 		
+		
+//		당첨번호가 어떤것들인지 화면에 출력
+		for(int i=0; i<lottoAnswerArr.length; i++) {
+			System.out.println(lottoAnswerArr[i]);
+		}
+		
+//		기능3. 당첨번호 작은수 부터 정리
+		int[] sortedLottoAnswerArr = new int[6];
+		
 		sc.close();
 	}
 }
