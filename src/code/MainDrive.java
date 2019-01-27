@@ -38,7 +38,7 @@ public class MainDrive {
 				
 				if(rangeOk && duplOk) {			// 범위, 중복검사 모두 통과하면
 					userInputNumArr[i] = inputNum;	//배열에 입력값 저장
-					System.out.println("다음 숫자 입력하세요~~");	
+					System.out.println("다음 숫자 입력하세요:)");	
 					break;									//탈출
 				}
 				
@@ -80,7 +80,12 @@ public class MainDrive {
 					break;
 				}
 			
-			
+			}
+		}
+//		당첨번호가 뭔지 화면에 출력
+		
+		for(int i=0; i<lottoAnswerArr.length;i++) {
+			System.out.println(lottoAnswerArr[i]);
 		}
 		
 	}
