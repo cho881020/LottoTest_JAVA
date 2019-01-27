@@ -11,10 +11,9 @@ public class MainDrive {
 		
 		int[] userInput = new int[6];
 		
+		Scanner sc = new Scanner(System.in);
+		
 		for(int i=0; i<userInput.length; i++) {
-			
-
-			Scanner sc = new Scanner(System.in);
 			
 			System.out.print(String.format("%d번째 번호를 입력하세요 : ", i+1));
 			
@@ -22,5 +21,6 @@ public class MainDrive {
 			System.out.println(userInput[i]);
 		}
 
+		sc.close();
 	}
 }
