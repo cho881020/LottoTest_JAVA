@@ -13,10 +13,10 @@ public class MainDrive {
 //	  - 1~45의 숫자만 입력가능, 중복된 숫자는 허용 X
 		
 		Scanner scan = new Scanner(System.in);  // 스캐너
-		int[] userInputNum = new int[6]; 
+		int[] userInputArr = new int[6]; // 6칸짜리 배열 생성.
 		
 
-		for (int i = 0 ; i < userInputNum.length ; i++) {
+		for (int i = 0 ; i < userInputArr.length ; i++) {
 			
 			while(true) {
 				
@@ -26,19 +26,24 @@ public class MainDrive {
 				
 //				번호 유효성 검사
 //				1) 1~45 여부  => 범위 벗어날시 false
-				boolean numRange = userInput > 0 && userInput <=45 ;
+				boolean numRange = userInput >= 1 && userInput <=45 ;
 				
-//				2) 중복검사  => 중복시 false
+//				2) 중복검사  => 기본 전제 true , 중복발생시 false
 				boolean isnotDuplNum = true ; 
-				for (int j= 0 ; j < userInputNum.length ; j++) {
+				
+//				저장된 배열을 다시 돌아본다.
+				for (int j= 0 ; j < userInputArr.length ; j++) {
 					
-					if( userInputNum[j] == userInput) {
+					if( userInputArr[j] == userInput) {
+//						중복 검사를 통과하지 못한다!
 						isnotDuplNum = false ;
+//						하나라도 걸렸으면 더 볼 필요도 없다.
+						break;
 					}
 			
 				}
 				if(numRange && isnotDuplNum) {
-					userInputNum[i] = userInput;
+					userInputArr[i] = userInput;
 					break;
 				}
 				else {
