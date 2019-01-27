@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MainDrive {
 
 	public static void main(String[] args) {
-				
+		
 //		기능 1. 사용자에게 6개의 숫자를 입력받아서 배열에 저장.
 //		작성 완료하면 커밋 후 푸시.
 		
@@ -109,10 +109,10 @@ public class MainDrive {
 		}
 		
 		
-//		당첨번호가 어떤것들인지 화면에 출력
-		for (int i=0 ; i < lottoAnswerArr.length ; i++) {
-			System.out.println(lottoAnswerArr[i]);
-		}
+////		당첨번호가 어떤것들인지 화면에 출력
+//		for (int i=0 ; i < lottoAnswerArr.length ; i++) {
+//			System.out.println(lottoAnswerArr[i]);
+//		}
 		
 		
 //		기능 3. 당첨번호 작은수 부터 정리 (오름차순 정렬)
@@ -152,6 +152,12 @@ public class MainDrive {
 			lottoAnswerArr[minIndex] = 99999999;
 			
 			
+		}
+		
+		
+//		금주의 당첨번호 출력
+		for (int i=0 ; i <sortedLottoAnswerArr.length ; i++) {
+			System.out.println(sortedLottoAnswerArr[i]);
 		}
 		
 		
