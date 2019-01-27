@@ -72,7 +72,7 @@ public class MainDrive {
 				boolean duplOk = true;
 				for (int j = 0; j < lottoAnswerArr.length; j++) {
 					if(lottoAnswerArr[i] == randomNum) {
-//						이번에 뽑은 번호가 중봅이다.
+//						이번에 뽑은 번호가 중복이다.
 						duplOk = false;
 						break;
 					}
@@ -88,10 +88,10 @@ public class MainDrive {
 				
 			}
 		}
-
-		for (int i = 0; i < userInputNum.length; i++) {
+//		당첨번호가 어떤 것들인지 화면에 출력
+		for (int i = 0; i < lottoAnswerArr.length; i++) {
 			
-			System.out.println(userInputNum[i]);
+			System.out.println(lottoAnswerArr[i]);
 		}
 	}
 }
