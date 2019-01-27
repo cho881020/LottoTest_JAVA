@@ -121,8 +121,35 @@ public class MainDrive {
 		
 		int[] sortedLottoAnswerArr = new int[lottoAnswerArr.length];
 		
-		
-		
+//		정렬 될 배열을 담당하는 for i
+		for(int i = 0 ; i < sortedLottoAnswerArr.length ; i++ ) {
+			
+//			내가 찾아낸 최소값 저장 변수
+			int min = 99999999;
+//			찾아낸 최소값 index 저장 변수
+			int minIndex = 0 ;
+			
+//			당첨번호 중 제일 작은 값을 찾아내는 for j
+			for (int j = 0 ; j < lottoAnswerArr.length ; j++) {
+				
+//				새로운 최소값을 찾았다면
+				if (min > lottoAnswerArr[j]) {
+					
+//					최소값을 찾아낸 값으로 변경
+					min = lottoAnswerArr[j];
+//					찾아낸 위치 index 확인
+					minIndex = j;
+				}			
+				
+				
+			} // j for
+			
+//			정렬 될 배열에 찾아낸 최소값을 기록.
+			sortedLottoAnswerArr[i] = min ;
+			
+//			찾아 낸 값은 더이상 정렬할 필요가 없으니 강제로 매우 큰 값으로 변경.
+			lottoAnswerArr[minIndex] = 9999999;
+		} // i for
 		
 
 //	4) 정렬된 두개의 배열을 가지고 비교해서 등수를 출력.
