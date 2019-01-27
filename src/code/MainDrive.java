@@ -98,6 +98,32 @@ public class MainDrive {
 //		기능3. 당첨번호 작은수 부터 정리
 		int[] sortedLottoAnswerArr = new int[6];
 		
+		
+//		정렬된 배열을 담당하는 반복문.
+		for(int i=0; i<sortedLottoAnswerArr.length; i++) {
+			
+//			최소값을 저장할 변수
+			int min = 9999999;
+//			최소값의 인덱스
+			int minIdx = 0;
+			
+//			당첨번호중에 젤 작은 값을 찾아내는 for문
+			for(int j=0; j<lottoAnswerArr.length; j++) {
+				
+				if(min > lottoAnswerArr[j]) {
+
+//					최소값 갱신.					
+					min = lottoAnswerArr[j];
+//					찾아낸 위치
+					minIdx = j;
+				}
+			}
+//			찾아낸 최소값을 기록
+			sortedLottoAnswerArr[i] = min;
+//			찾아낸 최소값 자리는 강제로 매우큰 수로 교체;
+			lottoAnswerArr[minIdx] = 9999999;
+		}
+		
 		sc.close();
 	}
 }
