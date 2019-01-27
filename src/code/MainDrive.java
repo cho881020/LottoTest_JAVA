@@ -124,5 +124,6 @@ public class MainDrive {
 			System.out.println(sortedLottoAnswerArr[i]);
 		}
 		
+//		TODO - 입력한 값과 당첨번호 대조해서 몇 등인지 판단하고 출력
 	}
 }
